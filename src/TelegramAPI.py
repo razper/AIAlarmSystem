@@ -1,6 +1,7 @@
 import requests
+import sys
 from src.UriDictionary import token
-whitelist = ['244463508']
+whitelist = [sys.argv[1]]
 
 
 class BotHandler:
