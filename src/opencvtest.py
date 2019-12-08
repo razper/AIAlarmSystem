@@ -1,9 +1,10 @@
 import cv2
 import os
+from src.UriDictionary import *
 
 if __name__ == '__main__':
-    cap = cv2.VideoCapture(1)
-    cascPath = os.path.join(os.path.dirname(os.path.realpath(__file__)),'haarcascade_frontalface_default.xml')
+    cap = cv2.VideoCapture(EXTERNAL_CAMERA)
+    cascPath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'haarcascade_frontalface_default.xml')
     faceCascade = cv2.CascadeClassifier(cascPath)
 
     while True:

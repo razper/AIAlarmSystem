@@ -1,1 +1,4 @@
-token = "963752138:AAFbkNZeyuxeYld8GbPCmDBd6rZS7monaqY"
+import sys
+token = sys.argv[1]
+PRIMARY_CAMERA = 0
+EXTERNAL_CAMERA = 1
